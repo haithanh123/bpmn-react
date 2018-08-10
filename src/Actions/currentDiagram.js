@@ -89,8 +89,11 @@ export const getInstanceChildnodeAction = (processInstanceId) => {
 	}	
 }
 
+
+
 export const choosingTaskAction = (chosenTaskId, instanceHistory, isActive) => {
 	let data = [];
+	console.log(instanceHistory)
 	instanceHistory.map(eachModel => {
 		if (eachModel.activityId == chosenTaskId) {
 			data = [
@@ -126,7 +129,7 @@ export const choosingTaskAction = (chosenTaskId, instanceHistory, isActive) => {
 	}
 }
 
-const completeUserTask = (taskId) => {
+export const completeUserTask = (taskId) => {
 	const username = "BaoTM2";
 	callAPI(`task/${taskId}/complete`,
 			'POST',
@@ -140,6 +143,7 @@ const completeUserTask = (taskId) => {
 				data.push({taskId, username});
 				localStorage.setItem('USER_TASK_HISTORY', JSON.stringify(data));
 			}).catch(err => console.log(err));
-	document.getElementById('completeTaskButton').disabled = true;
+	// document.getElementById('completeTaskButton').disabled = true;
 	toastr.success('Đã gửi request!');
 }
+

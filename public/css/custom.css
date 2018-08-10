@@ -1,0 +1,42 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+	margin-left: -280%;
+	/*margin-left: -120px;*/
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    /*width: 300px;*/
+    width: 600%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 12px;
+    z-index: 1;
+    border-radius: 7px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropdown-content > div {
+    color: black;
+}
+.dropdown:hover .dropdown-content > div:hover {
+    /*background: red;*/
+}
+.definition-key {
+	float: left;
+	padding-top: 4%;
+
+}
+.btn-accept {
+	padding-bottom: 20%;
+}
+.btn-accept button {
+	float: right;
+	background: #FF0000;
+	border-radius: 2px solid black;
+}

@@ -12,13 +12,16 @@ import { connect } from 'react-redux';
 import DiagramComponent from './Components/DiagramComponent';
 import IncidentList from './Components/IncidentList';
 import InformationComponent from './Components/InformationComponent';
+import callAPI from './Utils/callApi';
+import toastr from 'toastr';
 import {
   changeDiagramAction, 
   getInstanceHistoryAction,
   getInstanceInfoAction,
   getInstanceChildnodeAction,
   getDiagramXMLAction,
-  choosingTaskAction
+  choosingTaskAction,
+  completeUserTask
 } from './Actions/currentDiagram';
 import { deployProcessDefinition , getProcessDefinition, startProcessDefinition } from './Actions/processDefinition';
 import { getListIncidentAction } from './Actions/incidentList';
@@ -77,7 +80,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      image: '',
+      image: 'abc',
       open: false
     }
     this.interval = ''
@@ -96,22 +99,35 @@ class App extends Component {
   };
 
   onChange = async (e) => {
-      await this.setState({
-          image: e.target.files[0]
-      })
-      var formData = new FormData();
-      formData.append("upload", this.state.image);
-      this.props.deployProcessDefinition(formData);
+    await this.setState({
+        image: e.target.files[0]
+    })
+    var formData = new FormData();
+    formData.append("upload", this.state.image);
+    this.props.deployProcessDefinition(formData);
   }
+
+  getTaskAction = async (processInstanceId) => {
+    const res = await callAPI(`history/activity-instance?activityType=userTask&processInstanceId=${processInstanceId}`,
+      'GET',
+      {},{})
+    return await res.data[0];
+  }
+
   onClickStart = (keyProcess) => {
-      let code = moment().unix()
-      let data = {
-          "variables": {
-              "incidentID": { "value": code }
-          }
-      }
-      this.props.startProcessDefinition(keyProcess, data, code);
-      this.handleClose();
+    let code = moment().unix()
+    let data = {
+        "variables": {
+            "incidentID": { "value": code }
+        }
+    }
+    this.props.startProcessDefinition(keyProcess, data, code);
+    this.handleClose();
+  }
+
+  onClickAccpetIncident = async (processInstanceId) => {
+    let userTask = await this.getTaskAction(processInstanceId);
+    this.props.completeUserTask(userTask.taskId)
   }
 
   showTask = (processDefinition, classes) => {
@@ -141,7 +157,7 @@ class App extends Component {
     this.interval = setInterval(() => {
       this.props.getInstanceHistory(processInstanceId);
       this.props.getInstanceInfo(processInstanceId);
-    }, 5000);
+    }, 50000);
   }
   onClickGetTaskInformation = (chosenTaskId) => {
     let isActive = false;
@@ -155,6 +171,7 @@ class App extends Component {
     }
     this.props.choosingTask(chosenTaskId, this.props.currentDiagram.instanceHistory, isActive);
   }
+
   render() {
     const { 
       classes, 
@@ -162,6 +179,32 @@ class App extends Component {
       currentDiagram,
       processDefinition
       } = this.props;
+    let count = 0;
+    let acticeIncident; 
+    incidentList.map(n =>{
+      if(n.status === "ACTIVE"){
+        count = 1;
+      }
+    })
+    if(count === 1) {
+      acticeIncident = <div className="dropdown">
+                        <span><img style={{width: '40px',height: '40px'}} className="icon_notice" src="http://2.bp.blogspot.com/-mxAwi5zynAA/VQVFqfKZqmI/AAAAAAAAL6o/9zqIKf8nY6k/s1600/Apps-Notifications-icon.png" /></span>
+                        <div className="dropdown-content">
+                            {incidentList.map(n => {
+                              if(n.status==="ACTIVE"){
+                              return (
+                                <div key={n.id}>
+                                  <div className="definition-key">{n.definitionKey}</div>
+                                  <div className="btn-accept">
+                                    <Button onClick={() => this.onClickAccpetIncident(n.processInstanceId)}>Accept</Button>
+                                  </div>
+                                </div>
+                              );
+                            }
+                            })}
+                        </div>
+                      </div>
+    }
     return (
       <div className="App">
          <AppBar position="static">
@@ -178,6 +221,7 @@ class App extends Component {
                             type="file"
                             onChange={this.onChange}
                         />
+                        {acticeIncident}
                         <label htmlFor="flat-button-file">
                             <Button color="inherit" component="span" className={`${classes.buttonRight}`}>Deploy</Button>
                         </label>
@@ -287,6 +331,9 @@ const mapDispatchToProps = (dispatch, props) => {
         },
         getListIncident: () => {
           dispatch(getListIncidentAction())
+        },
+        completeUserTask: (taskId) => {
+          completeUserTask(taskId)
         }
     }
 }

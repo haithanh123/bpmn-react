@@ -15,6 +15,7 @@ class bpmnView extends React.Component{
     this.viewer.attachTo('#Bpmn');
     let eventBus = this.viewer.get('eventBus');
     eventBus.on('element.click', (e) => {
+      // console.log(e.element.id);
       this.props.onClickGetTaskInformation(e.element.id);
     });
   }
