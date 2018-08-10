@@ -1,0 +1,76 @@
+incidentID 1533776887 was authenticated by BaoTM2 at 09-08-2018 08:08:49
+incidentID 1533776944 is automatically phoned to boss at 09-08-2018 08:14:59
+incidentID 1533780080 is automatically phoned to boss at 09-08-2018 09:06:59
+incidentID 1533780906 was authenticated by BaoTM2 at 09-08-2018 09:15:58
+incidentID 1533780973 was authenticated by BaoTM2 at 09-08-2018 09:16:42
+incidentID 1533781009 was authenticated by BaoTM2 at 09-08-2018 09:19:29
+incidentID 1533781179 was authenticated by BaoTM2 at 09-08-2018 09:20:08
+incidentID 1533781742 was authenticated by BaoTM2 at 09-08-2018 09:29:21
+incidentID 1533781754 is automatically phoned to boss at 09-08-2018 09:34:14
+incidentID 1533785731 is automatically phoned to boss at 09-08-2018 10:40:45
+incidentID 1533786266 is automatically phoned to boss at 09-08-2018 10:50:00
+incidentID 1533786689 was authenticated by BaoTM2 at 09-08-2018 10:54:20
+incidentID 1533787518 is automatically phoned to boss at 09-08-2018 11:11:14
+incidentID 1533788856 is automatically phoned to boss at 09-08-2018 11:33:30
+incidentID 1533799027 is automatically phoned to boss at 09-08-2018 02:22:33
+incidentID 1533799507 is automatically phoned to boss at 09-08-2018 02:30:48
+incidentID 1533799903 was authenticated by BaoTM2 at 09-08-2018 02:33:11
+incidentID 1533800031 was authenticated by BaoTM2 at 09-08-2018 02:34:04
+incidentID 1533800036 is automatically phoned to boss at 09-08-2018 02:39:18
+incidentID 1533805387 is automatically phoned to boss at 09-08-2018 04:08:48
+incidentID 1533806150 was authenticated by BaoTM2 at 09-08-2018 04:16:57
+incidentID 1533807997 is automatically phoned to boss at 09-08-2018 04:52:18
+incidentID 1533808801 is automatically phoned to boss at 09-08-2018 05:05:33
+incidentID 1533809273 is automatically phoned to boss at 09-08-2018 05:13:48
+incidentID 1533809698 is automatically phoned to boss at 09-08-2018 05:20:04
+incidentID 1533809717 is automatically phoned to boss at 09-08-2018 05:20:18
+incidentID 1533810218 is automatically phoned to boss at 09-08-2018 05:29:34
+incidentID 1533810223 is automatically phoned to boss at 09-08-2018 05:29:34
+incidentID 1533811011 is automatically phoned to boss at 09-08-2018 05:42:04
+incidentID 1533866652 is automatically phoned to boss at 10-08-2018 09:09:50
+incidentID 1533867019 is automatically phoned to boss at 10-08-2018 09:15:20
+incidentID 1533867073 is automatically phoned to boss at 10-08-2018 09:16:35
+incidentID 1533867647 is automatically phoned to boss at 10-08-2018 09:26:05
+incidentID 1533867875 is automatically phoned to boss at 10-08-2018 09:30:20
+incidentID 1533868402 is automatically phoned to boss at 10-08-2018 09:39:22
+incidentID 1533868978 is automatically phoned to boss at 10-08-2018 09:48:37
+incidentID 1533869380 is automatically phoned to boss at 10-08-2018 09:54:52
+incidentID 1533869682 is automatically phoned to boss at 10-08-2018 10:00:07
+incidentID 1533870123 is automatically phoned to boss at 10-08-2018 10:07:22
+incidentID 1533870417 is automatically phoned to boss at 10-08-2018 10:12:37
+incidentID 1533871581 was authenticated by BaoTM2 at 10-08-2018 10:30:47
+incidentID 1533871959 was authenticated by BaoTM2 at 10-08-2018 10:33:29
+incidentID 1533872092 was authenticated by BaoTM2 at 10-08-2018 10:34:58
+incidentID 1533872133 was authenticated by BaoTM2 at 10-08-2018 10:35:45
+incidentID 1533872128 was authenticated by BaoTM2 at 10-08-2018 10:35:54
+incidentID 1533872226 was authenticated by BaoTM2 at 10-08-2018 10:37:20
+incidentID 1533872223 was authenticated by BaoTM2 at 10-08-2018 10:37:29
+incidentID 1533873129 is automatically phoned to boss at 10-08-2018 10:58:08
+incidentID 1533873515 was authenticated by BaoTM2 at 10-08-2018 11:02:39
+incidentID 1533874124 is automatically phoned to boss at 10-08-2018 11:14:23
+incidentID 1533875271 was authenticated by BaoTM2 at 10-08-2018 11:28:43
+incidentID 1533875352 was authenticated by BaoTM2 at 10-08-2018 11:29:17
+incidentID 1533875475 was authenticated by BaoTM2 at 10-08-2018 11:31:20
+incidentID 1533875511 was authenticated by BaoTM2 at 10-08-2018 11:31:56
+incidentID 1533875684 is automatically phoned to boss at 10-08-2018 11:39:53
+incidentID 1533875687 is automatically phoned to boss at 10-08-2018 11:39:53
+incidentID 1533876184 is automatically phoned to boss at 10-08-2018 11:48:08
+incidentID 1533876180 is automatically phoned to boss at 10-08-2018 11:48:08
+incidentID 1533876502 was authenticated by BaoTM2 at 10-08-2018 11:48:33
+incidentID 1533876506 was authenticated by BaoTM2 at 10-08-2018 11:48:46
+incidentID 1533876602 is automatically phoned to boss at 10-08-2018 11:55:23
+incidentID 1533876940 is automatically phoned to boss at 10-08-2018 12:01:38
+incidentID 1533877020 is automatically phoned to boss at 10-08-2018 12:02:13
+incidentID 1533877364 is automatically phoned to boss at 10-08-2018 12:08:28
+incidentID 1533877372 is automatically phoned to boss at 10-08-2018 12:08:28
+incidentID 1533877694 was authenticated by BaoTM2 at 10-08-2018 12:10:40
+incidentID 1533877727 was authenticated by BaoTM2 at 10-08-2018 12:10:47
+incidentID 1533877730 is automatically phoned to boss at 10-08-2018 12:14:43
+incidentID 1533887518 is automatically phoned to boss at 10-08-2018 02:57:37
+incidentID 1533887869 is automatically phoned to boss at 10-08-2018 03:02:52
+incidentID 1533888009 is automatically phoned to boss at 10-08-2018 03:06:07
+incidentID 1533888248 is automatically phoned to boss at 10-08-2018 03:09:22
+incidentID 1533888378 is automatically phoned to boss at 10-08-2018 03:11:38
+incidentID 1533888448 is automatically phoned to boss at 10-08-2018 03:12:53
+incidentID 1533888726 was authenticated by BaoTM2 at 10-08-2018 03:15:35
+incidentID 1533893035 was authenticated by BaoTM2 at 10-08-2018 04:24:03
